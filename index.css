@@ -124,6 +124,16 @@
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
     color: black;
 }
+@media(max-width:360px){
+  .banner-box{
+    height: 500px;
+    margin-top: 90px;
+    margin: 15px;
+  }
+  #header.header-scrolled {
+    background: rgb(0, 0, 0);
+}
+}
 
 /* ABOUT------------------------- */
 
@@ -369,19 +379,16 @@ section {
   .single-team-member:hover .team-social-icon {
     top: 45%;
     opacity: 1;
-  }
-  
+  } 
   .team-img {
     position: relative;
   }
   .team-img img {
     width: 304px;
-    height: 320px;
   }
   .team-img > a {
     display: block;
   }
-  
   .team-img > a::after {
     background: rgba(0, 0, 0, 0.7);
     bottom: 0;
@@ -392,8 +399,7 @@ section {
     transition: all 0.5s ease 0s;
     width: 100%;
     opacity: 0;
-  }
-  
+  } 
   .team-social-icon {
     left: 40%;
     margin-left: -61px;
@@ -437,6 +443,49 @@ section {
   .team-content > h4, .team-content > p {
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
+  }
+  @media(max-width:1416px){
+    .team-img img {
+      width: 304px;
+    }
+  }
+  @media(max-width:1399px){
+    .team-img img {
+      width: 259px;
+    }
+  }
+  @media(max-width:1299px){
+    .team-img img {
+      width: 213px;
+    }
+  }
+  @media(max-width:991px){
+    .team-img img {
+      width: 154px;
+    }
+    .team-content h4 {
+      font-size: 18px;
+    }
+    .team-content p {
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }
+  @media(max-width:767px){
+    .team-img img {
+      width: 109px;
+    }
+  }
+  @media(max-width:574px){
+    .single-team-member .team-img{
+      width: 310px;
+      height: 330px;
+    }
+    .single-team-member .team-img img{
+      width: 331px;
+      margin: 0;
+      padding: 0;
+    }
   }
 
 /*--------------------------------------------------------------
@@ -758,6 +807,14 @@ section {
 .inquiry .inquiry-form button[type="submit"]:hover {
   background: #2ec400;
 }  
+
+@media(max-width:786px){
+.inquiry .inquiry-form {
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+}
 
 /* FOOTER--------------------- */
 
