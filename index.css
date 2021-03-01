@@ -305,6 +305,12 @@ section {
     position: relative;
     overflow: hidden;
   }
+
+  .all-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .team-member::before {
     background: rgba(0, 0, 0, 0) url("images/ecommerce-3563183_1920.jpg") repeat scroll 0 0;
@@ -477,14 +483,12 @@ section {
     }
   }
   @media(max-width:574px){
-    .single-team-member .team-img{
-      width: 310px;
-      height: 330px;
+    .single-team-member{
+      width: 330px;
+      height: 400px;
     }
     .single-team-member .team-img img{
-      width: 331px;
-      margin: 0;
-      padding: 0;
+      width: 329px;
     }
   }
 
